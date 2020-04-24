@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
+import App from './App';
+import Portfolio from './components/Portfolio';
+import ServicesPage from './components/ServicesPage';
+import ContactPage from './components/ContactPage';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Router>
+      <Switch>
+      <Route exact path="/" component={ App } />
+      <Route path="/portfolio" component={ Portfolio } />
+      <Route path="/services" component={ ServicesPage } />
+      <Route path="/contact" component={ ContactPage } />
+      </Switch>
+    </Router>,
   document.getElementById('root')
 );
 

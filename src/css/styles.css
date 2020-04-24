@@ -1,0 +1,130 @@
+/************************************************
+GENERAL STYLES
+************************************************/
+html, body, .App {
+  height: calc(100% - 60px);
+  margin: 0; }
+
+body {
+  background: #fafafa; }
+
+/************************************************
+COVID ALERT
+************************************************/
+.alert {
+  text-align: center;
+  background: rgba(255, 200, 87, 0.8) !important;
+  margin: 0 !important; }
+  .alert .covidButton {
+    margin-left: 0.65rem; }
+
+/************************************************
+MAIN PAGE
+************************************************/
+.App {
+  text-align: center; }
+  .App .welcomeMessage {
+    height: 60%;
+    width: 60%;
+    margin: 0 auto; }
+  .App .contactBox {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem; }
+    .App .contactBox .contactCard {
+      height: 11.375rem;
+      width: 26rem;
+      padding: 0 2.25rem;
+      border: 2px solid #000000;
+      box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px; }
+      .App .contactBox .contactCard h4 {
+        font-style: italic; }
+      .App .contactBox .contactCard .cardTitle {
+        border-bottom: 1px solid #000000;
+        width: 100%;
+        margin-bottom: 1.5rem; }
+
+/************************************************
+PORTFOLIO
+************************************************/
+.main-gallery {
+  height: calc(100% - 60px);
+  text-align: center;
+  min-height: 100%;
+  position: relative; }
+  @media (max-width: 468px) {
+    .main-gallery {
+      height: 100%;
+      background: #000000; }
+      .main-gallery img {
+        margin-top: 4rem;
+        max-width: 100%;
+        max-height: 100%; } }
+
+/************************************************
+SERVICES PAGE
+************************************************/
+.servicesPage .servicesBox {
+  width: 65%;
+  height: 37.5rem;
+  margin: 7rem auto 0;
+  overflow: auto; }
+  .servicesPage .servicesBox .servicesList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center; }
+    .servicesPage .servicesBox .servicesList li {
+      margin: 0.35rem;
+      padding: 0 .25rem;
+      border: 2px solid #333333;
+      box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
+      text-align: center;
+      height: 7.5rem;
+      width: 18rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .servicesPage .servicesBox .servicesList li h5 {
+        margin: 0 0 .25rem 0; }
+
+/************************************************
+CONTACT PAGE
+************************************************/
+.contactPage .contactBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contactPage .contactBox .contactCard {
+    margin: 2.25rem 0;
+    height: 11.375rem;
+    width: 26rem;
+    padding: 0 2.25rem;
+    border: 2px solid #000000;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
+    text-align: center; }
+    .contactPage .contactBox .contactCard h4 {
+      font-style: italic; }
+    .contactPage .contactBox .contactCard .cardTitle {
+      border-bottom: 1px solid #000000;
+      width: 100%;
+      margin-bottom: 1.5rem; }
+
+/************************************************
+FOOTER
+************************************************/
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 2px solid #333333; }
+  .footer .footerIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer .footerIcons a {
+      margin: .5rem; }
