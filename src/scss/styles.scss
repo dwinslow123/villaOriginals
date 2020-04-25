@@ -24,10 +24,11 @@ html, body, .App {
   height: calc(100% - 60px);
   margin: 0;
   font-family: $lato;
+  background: #fafafa;
 }
 
 body {
-  background: #fafafa;
+  background-color: #fafafa !important;
 }
 
 
@@ -53,6 +54,7 @@ MAIN PAGE
 
 .App {
   text-align: center;
+  background: #fafafa;
 
     @include media($mobile) {
       height: auto;
@@ -87,6 +89,7 @@ MAIN PAGE
       padding: 0 2.25rem;
       border: 2px solid #000000;
       box-shadow: rgba(0,0,0,0.2) 5px 5px 10px;
+      background: #FFFFFF;
       
       @include media($mobile) {
         padding: 0;
@@ -138,6 +141,7 @@ SERVICES PAGE
 ************************************************/
 
 .servicesPage {
+  font-family: $lato;
 
   .servicesBox {
     width: 65%;
@@ -169,6 +173,7 @@ SERVICES PAGE
         justify-content: center;
         align-items: center;
         font-weight: 300;
+        background: #FFFFFF;
 
         h5 {
           margin: 0 0 .25rem 0;
@@ -210,6 +215,7 @@ CONTACT PAGE
       border: 2px solid #000000;
       box-shadow: rgba(0,0,0,0.2) 5px 5px 10px;
       text-align: center;
+      background: #FFFFFF;
 
       @include media($mobile) {
         padding: 0;
@@ -230,7 +236,18 @@ CONTACT PAGE
       }// contactPage contactBox contactCard cardTitle
     }// contactPage contactBox contactCard
   }// contactPage contactBox
+}// contactPage
+
+
+/************************************************
+HEADER
+************************************************/
+
+nav {
+  background: #FFFFFF !important;
+  border-bottom: 2px solid #000000;
 }
+
 /************************************************
 FOOTER
 ************************************************/
@@ -241,6 +258,7 @@ FOOTER
   bottom: 0;
   right: 0;
   border-top: 2px solid #333333;
+  background: #FFFFFF !important;
 
   @include media($mobile) {
     position: relative;

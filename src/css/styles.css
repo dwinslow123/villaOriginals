@@ -5,10 +5,11 @@ GENERAL STYLES
 html, body, .App {
   height: calc(100% - 60px);
   margin: 0;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  background: #fafafa; }
 
 body {
-  background: #fafafa; }
+  background-color: #fafafa !important; }
 
 /************************************************
 COVID ALERT
@@ -25,7 +26,8 @@ COVID ALERT
 MAIN PAGE
 ************************************************/
 .App {
-  text-align: center; }
+  text-align: center;
+  background: #fafafa; }
   @media (max-width: 468px) {
     .App {
       height: auto; } }
@@ -52,7 +54,8 @@ MAIN PAGE
       width: 26rem;
       padding: 0 2.25rem;
       border: 2px solid #000000;
-      box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px; }
+      box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
+      background: #FFFFFF; }
       @media (max-width: 468px) {
         .App .contactBox .contactCard {
           padding: 0;
@@ -83,36 +86,39 @@ PORTFOLIO
 /************************************************
 SERVICES PAGE
 ************************************************/
-.servicesPage .servicesBox {
-  width: 65%;
-  height: 37.5rem;
-  margin: 7rem auto 0;
-  overflow: auto; }
-  @media (max-width: 468px) {
-    .servicesPage .servicesBox {
-      margin-top: 2rem; } }
-  .servicesPage .servicesBox .servicesList {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    align-items: center; }
-    .servicesPage .servicesBox .servicesList li {
-      margin: 0.35rem;
-      padding: 0 .25rem;
-      border: 2px solid #333333;
-      box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
-      text-align: center;
-      height: 7.5rem;
-      width: 18rem;
+.servicesPage {
+  font-family: "Lato", sans-serif; }
+  .servicesPage .servicesBox {
+    width: 65%;
+    height: 37.5rem;
+    margin: 7rem auto 0;
+    overflow: auto; }
+    @media (max-width: 468px) {
+      .servicesPage .servicesBox {
+        margin-top: 2rem; } }
+    .servicesPage .servicesBox .servicesList {
+      list-style: none;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-weight: 300; }
-      .servicesPage .servicesBox .servicesList li h5 {
-        margin: 0 0 .25rem 0;
-        font-family: "Open Sans", sans-serif; }
+      flex-wrap: wrap;
+      align-self: center;
+      align-items: center; }
+      .servicesPage .servicesBox .servicesList li {
+        margin: 0.35rem;
+        padding: 0 .25rem;
+        border: 2px solid #333333;
+        box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
+        text-align: center;
+        height: 7.5rem;
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        background: #FFFFFF; }
+        .servicesPage .servicesBox .servicesList li h5 {
+          margin: 0 0 .25rem 0;
+          font-family: "Open Sans", sans-serif; }
 
 /************************************************
 CONTACT PAGE
@@ -136,7 +142,8 @@ CONTACT PAGE
       padding: 0 2.25rem;
       border: 2px solid #000000;
       box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
-      text-align: center; }
+      text-align: center;
+      background: #FFFFFF; }
       @media (max-width: 468px) {
         .contactPage .contactBox .contactCard {
           padding: 0;
@@ -152,6 +159,13 @@ CONTACT PAGE
         margin-bottom: 1.5rem; }
 
 /************************************************
+HEADER
+************************************************/
+nav {
+  background: #FFFFFF !important;
+  border-bottom: 2px solid #000000; }
+
+/************************************************
 FOOTER
 ************************************************/
 .footer {
@@ -159,7 +173,8 @@ FOOTER
   left: 0;
   bottom: 0;
   right: 0;
-  border-top: 2px solid #333333; }
+  border-top: 2px solid #333333;
+  background: #FFFFFF !important; }
   @media (max-width: 468px) {
     .footer {
       position: relative; } }
