@@ -1,19 +1,14 @@
-$font-family-sans-serif:
-  // Safari for OS X and iOS (San Francisco)
-  -apple-system,
-  // Chrome < 56 for OS X (San Francisco)
-  BlinkMacSystemFont,
-  // Windows
-  "Segoe UI",
-  // Android
-  "Roboto",
-  // Basic web fallback
-  "Helvetica Neue", Arial, sans-serif,
-  // Emoji fonts
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans&display=swap');
+
+// Fonts
+$lato: 'Lato', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+
+// Media views
 $mobile: "(max-width: 468px)";
 $tablet: "(max-width: 768px)";
 
+// Mixins
 @mixin media($queryString) {
   @media #{$queryString} {
     @content;
@@ -28,6 +23,7 @@ GENERAL STYLES
 html, body, .App {
   height: calc(100% - 60px);
   margin: 0;
+  font-family: $lato;
 }
 
 body {
@@ -43,6 +39,7 @@ COVID ALERT
   text-align: center;
   background: rgba(255,200,87, 0.8) !important;
   margin: 0 !important;
+  font-family: $open-sans;
 
   .covidButton {
     margin-left: 0.65rem;
@@ -56,7 +53,7 @@ MAIN PAGE
 
 .App {
   text-align: center;
-  
+
     @include media($mobile) {
       height: auto;
     }// App mobileview
@@ -100,6 +97,7 @@ MAIN PAGE
 
       h4 {
         font-style: italic;
+        font-weight: 300;
       }// contactBox contactCard h4
 
       .cardTitle {
@@ -170,9 +168,11 @@ SERVICES PAGE
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-weight: 300;
 
         h5 {
           margin: 0 0 .25rem 0;
+          font-family: $open-sans;
         }// servicesPage servicesBox servicesList li h5
       }// servicesPage servicesBox servicesList li
     }// servicesPage servicesBox servicesList
@@ -185,6 +185,8 @@ CONTACT PAGE
 ************************************************/
 
 .contactPage {
+
+  font-family: $lato;
 
   @include media($mobile) {
     height: auto;
@@ -218,6 +220,7 @@ CONTACT PAGE
 
       h4 {
         font-style: italic;
+        font-weight: 300;
       }// contactPage contactBox contactCard h4
 
       .cardTitle {
