@@ -23,20 +23,39 @@ MAIN PAGE
 ************************************************/
 .App {
   text-align: center; }
+  @media (max-width: 468px) {
+    .App {
+      height: auto; } }
   .App .welcomeMessage {
     height: 60%;
     width: 60%;
     margin: 0 auto; }
+    @media (max-width: 468px) {
+      .App .welcomeMessage {
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+        padding: .25rem; } }
   .App .contactBox {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem; }
+    @media (max-width: 468px) {
+      .App .contactBox {
+        margin-top: 0;
+        flex-direction: column; } }
     .App .contactBox .contactCard {
       height: 11.375rem;
       width: 26rem;
       padding: 0 2.25rem;
       border: 2px solid #000000;
       box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px; }
+      @media (max-width: 468px) {
+        .App .contactBox .contactCard {
+          padding: 0;
+          width: 80%;
+          height: 10.625rem;
+          margin: .25rem auto; } }
       .App .contactBox .contactCard h4 {
         font-style: italic; }
       .App .contactBox .contactCard .cardTitle {
@@ -125,6 +144,9 @@ FOOTER
   bottom: 0;
   right: 0;
   border-top: 2px solid #333333; }
+  @media (max-width: 468px) {
+    .footer {
+      position: relative; } }
   .footer .footerIcons {
     display: flex;
     justify-content: center;

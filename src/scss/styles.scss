@@ -47,12 +47,8 @@ COVID ALERT
   .covidButton {
     margin-left: 0.65rem;
   } // covidButton
-} // header
+} // alert
 
-
-/************************************************
-COVID ALERT
-************************************************/
 
 /************************************************
 MAIN PAGE
@@ -60,24 +56,47 @@ MAIN PAGE
 
 .App {
   text-align: center;
-
+  
+    @include media($mobile) {
+      height: auto;
+    }// App mobileview
+  
   .welcomeMessage {
     height: 60%;
     width: 60%;
     margin: 0 auto;
-  }// App welcomeMessage
 
+    @include media($mobile) {
+      height: auto;
+      width: 80%;
+      margin: 0 auto;
+      padding: .25rem;
+    }// App welcomeMessage mobileview
+  }// App welcomeMessage
+  
   .contactBox {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem;
-
+    
+    @include media($mobile) {
+      margin-top: 0;
+      flex-direction: column;
+    }// App contactBox mobileview
+    
     .contactCard {
       height: 11.375rem;
       width: 26rem;
       padding: 0 2.25rem;
       border: 2px solid #000000;
       box-shadow: rgba(0,0,0,0.2) 5px 5px 10px;
+      
+      @include media($mobile) {
+        padding: 0;
+        width: 80%;
+        height: 10.625rem;
+        margin: .25rem auto;
+      }// App contactCard mobileview
 
       h4 {
         font-style: italic;
@@ -87,7 +106,7 @@ MAIN PAGE
         border-bottom: 1px solid #000000;
         width: 100%;
         margin-bottom: 1.5rem;
-      }
+      }// App contactBox contactCard cardTitle
     }// contactBox contactCard
   }// contactBox
 }// App
@@ -111,8 +130,8 @@ PORTFOLIO
       margin-top: 4rem;
       max-width: 100%;
       max-height: 100%;
-    } // main-gallery mobile img
-  } // main-gallery moblie
+    } // main-gallery mobileview img
+  } // main-gallery mobileview
 } // main-gallery
 
 
@@ -204,6 +223,10 @@ FOOTER
   bottom: 0;
   right: 0;
   border-top: 2px solid #333333;
+
+  @include media($mobile) {
+    position: relative;
+  }
 
   .footerIcons {
     display: flex;

@@ -2,8 +2,8 @@
   "name": "villa_originals",
   "version": "0.1.0",
   "engines": {
-    "node": "13.3.x",
-    "yarn": "1.12.x"
+    "node": "12.13.x",
+    "yarn": "1.22.x"
   },
   "private": true,
   "dependencies": {

@@ -35,8 +35,7 @@ import CovidMessage from './components/CovidMessage';
         <div className="contactCard">
           <div className="cardTitle"><h4>Stop By</h4></div>
           <p className="lead text-center">
-          We are located at:<address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address>
-          </p>
+          We are located at:</p><address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address>
         </div>
         <div className="contactCard">
         <div className="cardTitle"><h4>Give us a call</h4></div>
