@@ -74,11 +74,7 @@ PORTFOLIO
   @media (max-width: 468px) {
     .main-gallery {
       height: 100%;
-      background: #000000; }
-      .main-gallery img {
-        margin-top: 4rem;
-        max-width: 100%;
-        max-height: 100%; } }
+      background: #000000; } }
 
 /************************************************
 SERVICES PAGE
@@ -115,6 +111,12 @@ SERVICES PAGE
 /************************************************
 CONTACT PAGE
 ************************************************/
+@media (max-width: 468px) {
+  .contactPage {
+    height: auto; }
+    .contactPage .footer {
+      position: absolute; } }
+
 .contactPage .contactBox {
   display: flex;
   flex-direction: column;
@@ -128,6 +130,12 @@ CONTACT PAGE
     border: 2px solid #000000;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
     text-align: center; }
+    @media (max-width: 468px) {
+      .contactPage .contactBox .contactCard {
+        padding: 0;
+        width: 80%;
+        height: 10.625rem;
+        margin: .25rem auto; } }
     .contactPage .contactBox .contactCard h4 {
       font-style: italic; }
     .contactPage .contactBox .contactCard .cardTitle {
