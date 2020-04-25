@@ -69,6 +69,9 @@ SERVICES PAGE
   height: 37.5rem;
   margin: 7rem auto 0;
   overflow: auto; }
+  @media (max-width: 468px) {
+    .servicesPage .servicesBox {
+      margin-top: 2rem; } }
   .servicesPage .servicesBox .servicesList {
     list-style: none;
     display: flex;

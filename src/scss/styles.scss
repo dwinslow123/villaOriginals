@@ -51,6 +51,10 @@ COVID ALERT
 
 
 /************************************************
+COVID ALERT
+************************************************/
+
+/************************************************
 MAIN PAGE
 ************************************************/
 
@@ -123,6 +127,10 @@ SERVICES PAGE
     height: 37.5rem;
     margin: 7rem auto 0;
     overflow: auto;
+
+    @include media($mobile) {
+      margin-top: 2rem;
+    }
 
     .servicesList {
       list-style: none;

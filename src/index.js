@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+import ReactGA from 'react-ga';
+
 
 import App from './App';
 import Portfolio from './components/Portfolio';
@@ -10,6 +12,9 @@ import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+const trackingId = "UA-145110574-1";
+ReactGA.initialize(trackingId);
 
 ReactDOM.render(
     <Router>
