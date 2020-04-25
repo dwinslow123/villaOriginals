@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import './css/styles.css';
 
+import ReactGA from 'react-ga';
 
 import Header from './components/Header';
 import { Footer } from './components/Footer';
 
 import CovidMessage from './components/CovidMessage';
+
+ReactGA.pageview(window.location.pathname + window.location.search);
 
   class App extends Component {
 

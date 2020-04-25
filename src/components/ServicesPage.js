@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Header from './Header';
 import { Footer } from './Footer';
 
+import ReactGA from 'react-ga';
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 class ServicesPage extends Component {
   render() {
     return (

@@ -9,6 +9,9 @@ import {
   CarouselControl,
   CarouselIndicators } from 'reactstrap';
 
+import ReactGA from 'react-ga';
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 class Portfolio extends Component {
   constructor(props) {
     super(props);

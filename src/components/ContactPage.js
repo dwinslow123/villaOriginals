@@ -5,6 +5,9 @@ import { Footer } from './Footer';
 
 import '../css/styles.css';
 
+import ReactGA from 'react-ga';
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 class ContactPage extends Component {
   
   mapSelector = () => {
