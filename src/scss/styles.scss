@@ -7,7 +7,7 @@ $open-sans: 'Open Sans', sans-serif;
 // Media views
 $mobile: "(max-width: 468px)";
 $tablet: "(max-width: 768px)";
-$laptop: "(max-width: 1280px)";
+$laptop: "(max-width: 1280px) and (min-width: 769px)";
 
 // Mixins
 @mixin media($queryString) {
@@ -243,6 +243,11 @@ CONTACT PAGE
       box-shadow: rgba(0,0,0,0.2) 5px 5px 10px;
       text-align: center;
       background: #FFFFFF;
+      
+      @include media($laptop) {
+        width: auto;
+        margin: 3.25rem 1.25rem 0;
+      }
 
       @include media($mobile) {
         padding: 0;
@@ -251,10 +256,6 @@ CONTACT PAGE
         margin: .25rem auto;
       }// contactPage contactCard mobileview
 
-      @include media($laptop) {
-        width: auto;
-        margin: 3.25rem 1.25rem 0;
-      }
 
       h4 {
         font-style: italic;
@@ -291,10 +292,6 @@ FOOTER
   right: 0;
   border-top: 2px solid #333333;
   background: #FFFFFF !important;
-
-  @include media($mobile) {
-    position: relative;
-  }
 
   .footerIcons {
     display: flex;
