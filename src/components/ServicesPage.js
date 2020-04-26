@@ -25,9 +25,8 @@ class ServicesPage extends Component {
               <li><h5>Perms</h5>$72+ ($82+ with Curl)</li>
               <li><h5>Updo's and Formals</h5>$45</li>
               <li><h5>Facial Waxing</h5>$10</li>
-              <li>And Much More</li>
+              <li><h5>And Much More</h5>*Cut not included. All prices are starting points.</li>
             </ul>
-            <p>*Cut not included. All prices are starting points.</p>
           </div>
         <Footer />
         </div>
