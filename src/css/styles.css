@@ -99,6 +99,9 @@ SERVICES PAGE
 ************************************************/
 .servicesPage {
   font-family: "Lato", sans-serif; }
+  @media (max-width: 468px) {
+    .servicesPage .footer {
+      position: absolute; } }
   .servicesPage .servicesBox {
     width: 65%;
     height: 37.5rem;
@@ -118,6 +121,9 @@ SERVICES PAGE
       flex-wrap: wrap;
       align-self: center;
       align-items: center; }
+      @media (max-width: 468px) {
+        .servicesPage .servicesBox .servicesList {
+          padding: 0; } }
       .servicesPage .servicesBox .servicesList li {
         margin: 0.35rem;
         padding: 0 .25rem;
@@ -199,6 +205,9 @@ FOOTER
   right: 0;
   border-top: 2px solid #333333;
   background: #FFFFFF !important; }
+  @media (max-width: 468px) {
+    .footer {
+      position: relative; } }
   .footer .footerIcons {
     display: flex;
     justify-content: center;

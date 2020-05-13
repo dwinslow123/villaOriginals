@@ -159,6 +159,12 @@ SERVICES PAGE
 .servicesPage {
   font-family: $lato;
 
+  @include media($mobile) {
+    .footer {
+      position: absolute;
+    }
+  }
+
   .servicesBox {
     width: 65%;
     height: 37.5rem;
@@ -181,6 +187,10 @@ SERVICES PAGE
       flex-wrap: wrap;
       align-self: center;
       align-items: center;
+
+      @include media($mobile) {
+        padding: 0;
+      }
 
       li {
         margin: 0.35rem;
@@ -292,6 +302,10 @@ FOOTER
   right: 0;
   border-top: 2px solid #333333;
   background: #FFFFFF !important;
+
+  @include media($mobile) {
+    position: relative;
+  }
 
   .footerIcons {
     display: flex;
