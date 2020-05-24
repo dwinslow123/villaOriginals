@@ -24,7 +24,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
   render() {
   return (
     <div className="App">
-      <CovidMessage buttonLabel="Click here for more information" className="covidButton" />
+      <CovidMessage buttonLabel="See More" className="covidButton" />
       <Header />
       <div className="welcomeMessage">
         <h4 className="display-3">Villa Originals</h4>

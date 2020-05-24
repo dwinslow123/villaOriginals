@@ -7,7 +7,7 @@ $open-sans: 'Open Sans', sans-serif;
 // Media views
 $mobile: "(max-width: 468px)";
 $tablet: "(max-width: 768px)";
-$laptop: "(max-width: 1280px) and (min-width: 769px)";
+$laptop: "(max-width: 1367px) and (min-width: 769px)";
 
 // Mixins
 @mixin media($queryString) {
@@ -87,6 +87,10 @@ MAIN PAGE
       margin-top: 0;
       flex-direction: column;
     }// App contactBox mobileview
+
+    @include media($laptop) {
+      margin-top: 1rem;
+    }// App contactBox laptopview
     
     .contactCard {
       height: 11.375rem;
@@ -103,11 +107,15 @@ MAIN PAGE
         margin: .25rem auto;
       }// App contactCard mobileview
 
+      @include media($tablet) {
+        width: 15rem;
+      }// App contactCard tabletview
+
       @include media($laptop) {
         width: auto;
         margin: 0 auto;
         height: 10rem;
-      }
+      }// App contactCard laptopview
 
       h4 {
         font-style: italic;
@@ -159,12 +167,6 @@ SERVICES PAGE
 .servicesPage {
   font-family: $lato;
 
-  @include media($mobile) {
-    .footer {
-      position: absolute;
-    }
-  }
-
   .servicesBox {
     width: 65%;
     height: 37.5rem;
@@ -175,11 +177,17 @@ SERVICES PAGE
       margin-top: 2rem;
     }// servicesBox mobileview
 
+    @include media($tablet) {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+    }//servicesBox tabletview
+
     @include media($laptop) {
       width: auto;
       height: auto;
       margin: 0;
-    }
+    }// servicesBox laptopview
 
     .servicesList {
       list-style: none;
@@ -187,10 +195,15 @@ SERVICES PAGE
       flex-wrap: wrap;
       align-self: center;
       align-items: center;
+      padding: 0;
 
       @include media($mobile) {
         padding: 0;
-      }
+      }// servicesBox servicesList mobileview
+
+      @include media($laptop) {
+        justify-content: center;
+      }// servicesBox servicesList laptopview
 
       li {
         margin: 0.35rem;
@@ -206,6 +219,10 @@ SERVICES PAGE
         align-items: center;
         font-weight: 300;
         background: #FFFFFF;
+
+        @include media($laptop) {
+          height: 6rem;
+        }// servicesBox servicesList li laptopview
 
         h5 {
           margin: 0 0 .25rem 0;
