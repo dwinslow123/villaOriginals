@@ -35,7 +35,7 @@ class ContactPage extends Component {
       </div>
       <div className="contactCard">
       <div className="cardTitle"><h4>Or send us an email</h4></div>
-        <form method="post" action="mailto:dwinslow123@me.com">
+        <form method="post" action="mailto:villaoriginals@icloud.com">
                 <Button
                   type="submit"
                   value="Send Email"
