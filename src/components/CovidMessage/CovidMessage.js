@@ -7,17 +7,17 @@ import {
   ModalFooter,
   Button,
 } from "reactstrap";
+import styles from './CovidMessage.module.css';
 
-const CovidModal = (props) => {
-  const { buttonLabel, className } = props;
+const CovidModal = ({ buttonLabel, className }) => {
 
   const [modal, setModal] = React.useState(false);
 
   const toggle = () => setModal(!modal);
 
   return (
-    <div>
-      <Alert color="info">
+    <div className={ styles.modal }>
+      <Alert className={ styles.covidAlert } color='none' style={{marginBottom: "0" }}>
         See our updates regarding COVID-19
         <Button color="secondary" onClick={toggle} className={className}>
           {buttonLabel}

@@ -1,0 +1,12 @@
+.footer {
+  grid-area: footer;
+  border-top: 2px solid #000000;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerIcons a {
+  margin: 0 .75rem;
+}

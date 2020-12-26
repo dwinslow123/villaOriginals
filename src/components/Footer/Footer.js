@@ -2,14 +2,15 @@ import React from 'react';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import styles from './Footer.module.css';
 
 dom.watch();
 library.add(faFacebook, faInstagram);
 
 export const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footerIcons">
+    <div className={ styles.footer }>
+      <div className={ styles.footerIcons }>
         <a href="https://www.facebook.com/Villa-Originals-324083014196/">
           <FontAwesomeIcon
             icon={['fab', 'facebook']}

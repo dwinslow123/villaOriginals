@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import '../css/styles.css';
+import styles from './Header.module.css';
 
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   Nav,
   NavItem,
   NavLink
@@ -23,11 +21,8 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="">
-        <Navbar color="light" light expand="md">
-          <NavbarToggler onClick={ this.toggle } />
-          <Collapse isOpen={ this.state.isOpen } navbar>
-            <Nav className="ml-auto" navbar>
+        <Navbar color="light" light expand="md" className={ styles.header }>
+            <Nav className={ styles.navBar } navbar>
               <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem>
@@ -38,9 +33,7 @@ class Header extends Component {
                 <NavLink href="/contact">Contact</NavLink>
               </NavItem>
             </Nav>
-          </Collapse>
         </Navbar>
-      </div>
     );
   }
 }

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans&display=swap");
+
+.modal {
+  grid-area: modal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(255,200,87, 0.8);
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+  .covidButton {
+    margin-left: 0.65rem;
+  }
+

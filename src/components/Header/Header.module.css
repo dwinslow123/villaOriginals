@@ -1,0 +1,9 @@
+.header {
+  border-bottom: 2px solid #000000;
+}
+
+.navBar {
+  flex-direction: row !important;
+  width: 100%;
+  justify-content: space-evenly;
+}
