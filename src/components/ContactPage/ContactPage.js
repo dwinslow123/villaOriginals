@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "reactstrap";
-import styles from './ContactPage.module.css';
+import styles from "./ContactPage.module.css";
 
 import ReactGA from "react-ga";
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -20,47 +20,49 @@ class ContactPage extends Component {
 
   render() {
     return (
-      <div className={ styles.contactPage }>
-        <div className={ styles.contactBox }>
-          <div className={ styles.contactCard }>
-            <div className={ styles.cardTitle }>
-              <h4>Stop By</h4>
+      <div className={styles.contactPage}>
+        <div className={styles.contactBox}>
+          <div className={styles.contactCard}>
+            <div className={styles.addressBlock}>
+              <div className={styles.cardTitle}>
+                <h4>Stop By</h4>
+              </div>
+              <p className="lead text-center">
+                We are located at:
+                <address>
+                  <a
+                    href="https://goo.gl/maps/9iYz4N7VCus"
+                    onClick={this.mapSelector}
+                  >
+                    26 S. Villa Ave
+                    <br />
+                    Villa Park, IL 60181
+                  </a>
+                </address>
+              </p>
             </div>
-            <p className="lead text-center">
-              We are located at:
-              <address>
-                <a
-                  href="https://goo.gl/maps/9iYz4N7VCus"
-                  onClick={this.mapSelector}
-                >
-                  26 S. Villa Ave
-                  <br />
-                  Villa Park, IL 60181
-                </a>
-              </address>
-            </p>
-          </div>
-          <div className={ styles.contactCard }>
-            <div className={ styles.cardTitle }>
-              <h4>Give us a call</h4>
+            <div className={styles.phoneBlock}>
+                <div className={styles.cardTitle}>
+                  <h4>Give us a call</h4>
+                </div>
+                <p className="lead text-center">
+                  You can call us here:
+                  <br />{" "}
+                  <a href="tel:630-833-6777" onClick={this.phoneClick}>
+                    (630) 833-6777
+                  </a>
+                </p>
             </div>
-            <p className="lead text-center">
-              You can call us here:
-              <br />{" "}
-              <a href="tel:630-833-6777" onClick={this.phoneClick}>
-                (630) 833-6777
-              </a>
-            </p>
-          </div>
-          <div className={ styles.contactCard }>
-            <div className={ styles.cardTitle }>
-              <h4>Or send us an email</h4>
+            <div className={styles.emailBlock}>
+                <div className={styles.cardTitle}>
+                  <h4>Or send us an email</h4>
+                </div>
+                <form method="post" action="mailto:villaoriginals@icloud.com">
+                  <Button type="submit" value="Send Email" color="info">
+                    Email Us!
+                  </Button>
+                </form>
             </div>
-            <form method="post" action="mailto:villaoriginals@icloud.com">
-              <Button type="submit" value="Send Email" color="info">
-                Email Us!
-              </Button>
-            </form>
           </div>
         </div>
       </div>
