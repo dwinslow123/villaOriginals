@@ -7,7 +7,7 @@ import styles from './Footer.module.css';
 dom.watch();
 library.add(faFacebook, faInstagram);
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <div className={ styles.footer }>
       <div className={ styles.footerIcons }>
@@ -27,3 +27,5 @@ export const Footer = () => {
     </div>
   )
 }
+
+export default Footer;

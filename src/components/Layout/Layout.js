@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../Header/Header';
-import { Footer } from '../Footer/Footer';
-import CovidMessage from '../CovidMessage/CovidMessage';
+import Header from '../Header';
+import Footer from '../Footer';
+import CovidMessage from '../CovidMessage';
 
 import styles from './Layout.module.css';
 

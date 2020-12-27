@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Layout from "./components/Layout/";
-import Home from './components/Home/Home';
-import ServicesPage from './components/ServicesPage/ServicesPage';
-import ContactPage from './components/ContactPage/ContactPage';
+import Home from './components/Home';
+import ServicesPage from './components/ServicesPage';
+import ContactPage from './components/ContactPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {

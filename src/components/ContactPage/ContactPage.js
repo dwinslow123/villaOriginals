@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import { Button } from "reactstrap";
 import styles from "./ContactPage.module.css";
 
 import ReactGA from "react-ga";
 ReactGA.pageview(window.location.pathname + window.location.search);
 
-class ContactPage extends Component {
-  mapSelector = () => {
+const ContactPage = () => {
+  const mapSelector = () => {
     if (
       navigator.platform.indexOf("iPhone") !== -1 ||
       navigator.platform.indexOf("iPad") !== -1 ||
@@ -18,7 +18,6 @@ class ContactPage extends Component {
     }
   };
 
-  render() {
     return (
       <div className={styles.contactPage}>
         <div className={styles.contactBox}>
@@ -32,7 +31,7 @@ class ContactPage extends Component {
                 <address>
                   <a
                     href="https://goo.gl/maps/9iYz4N7VCus"
-                    onClick={this.mapSelector}
+                    onClick={mapSelector}
                   >
                     26 S. Villa Ave
                     <br />
@@ -48,7 +47,7 @@ class ContactPage extends Component {
                 <p className="lead text-center">
                   You can call us here:
                   <br />{" "}
-                  <a href="tel:630-833-6777" onClick={this.phoneClick}>
+                  <a href="tel:630-833-6777">
                     (630) 833-6777
                   </a>
                 </p>
@@ -68,6 +67,5 @@ class ContactPage extends Component {
       </div>
     );
   }
-}
 
 export default ContactPage;
