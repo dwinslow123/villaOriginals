@@ -2,7 +2,7 @@
   "name": "villa_originals",
   "version": "0.1.0",
   "engines": {
-    "node": "13.3.x",
+    "node": "15.x",
     "yarn": "1.22.x"
   },
   "private": true,
@@ -46,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "emailjs-com": "^2.6.4"
   }
 }
