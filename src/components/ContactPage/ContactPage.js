@@ -18,54 +18,48 @@ const ContactPage = () => {
     }
   };
 
-    return (
-      <div className={styles.contactPage}>
-        <div className={styles.contactBox}>
-          <div className={styles.contactCard}>
-            <div className={styles.addressBlock}>
-              <div className={styles.cardTitle}>
-                <h4>Stop By</h4>
-              </div>
-              <p className="lead text-center">
-                We are located at:
-                <address>
-                  <a
-                    href="https://goo.gl/maps/9iYz4N7VCus"
-                    onClick={mapSelector}
-                  >
-                    26 S. Villa Ave
-                    <br />
-                    Villa Park, IL 60181
-                  </a>
-                </address>
-              </p>
+  return (
+    <div className={styles.contactPage}>
+      <div className={styles.contactBox}>
+        <div className={styles.contactCard}>
+          <div className={styles.addressBlock}>
+            <div className={styles.cardTitle}>
+              <h4>Stop By</h4>
             </div>
-            <div className={styles.phoneBlock}>
-                <div className={styles.cardTitle}>
-                  <h4>Give us a call</h4>
-                </div>
-                <p className="lead text-center">
-                  You can call us here:
-                  <br />{" "}
-                  <a href="tel:630-833-6777">
-                    (630) 833-6777
-                  </a>
-                </p>
+            <p className="lead text-center">
+              We are located at:
+              <address>
+                <a href="https://goo.gl/maps/9iYz4N7VCus" onClick={mapSelector}>
+                  26 S. Villa Ave
+                  <br />
+                  Villa Park, IL 60181
+                </a>
+              </address>
+            </p>
+          </div>
+          <div className={styles.phoneBlock}>
+            <div className={styles.cardTitle}>
+              <h4>Give us a call</h4>
             </div>
-            <div className={styles.emailBlock}>
-                <div className={styles.cardTitle}>
-                  <h4>Or send us an email</h4>
-                </div>
-                <form method="post" action="mailto:villaoriginals@icloud.com">
-                  <Button type="submit" value="Send Email" color="info">
-                    Email Us!
-                  </Button>
-                </form>
+            <p className="lead text-center">
+              You can call us here:
+              <br /> <a href="tel:630-833-6777">(630) 833-6777</a>
+            </p>
+          </div>
+          <div className={styles.emailBlock}>
+            <div className={styles.cardTitle}>
+              <h4>Or send us an email</h4>
             </div>
+            <form method="post" action="mailto:villaoriginals@icloud.com">
+              <Button type="submit" value="Send Email" color="info">
+                Email Us!
+              </Button>
+            </form>
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+};
 
 export default ContactPage;
