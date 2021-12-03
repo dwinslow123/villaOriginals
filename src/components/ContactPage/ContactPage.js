@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "reactstrap";
 import styles from "./ContactPage.module.css";
 
 import ReactGA from "react-ga";
@@ -45,16 +44,6 @@ const ContactPage = () => {
               You can call us here:
               <br /> <a href="tel:630-833-6777">(630) 833-6777</a>
             </p>
-          </div>
-          <div className={styles.emailBlock}>
-            <div className={styles.cardTitle}>
-              <h4>Or send us an email</h4>
-            </div>
-            <form method="post" action="mailto:villaoriginals@icloud.com">
-              <Button type="submit" value="Send Email" color="info">
-                Email Us!
-              </Button>
-            </form>
           </div>
         </div>
       </div>

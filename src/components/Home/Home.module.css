@@ -90,10 +90,14 @@
     width: 70%;
     padding: 2%;
   }
+
+  .addressBlock, .phoneBlock {
+    border-bottom: 1px solid #000000;
+  }
 }
 
 .cardTitle {
-  border-bottom: 1px solid #000000;
+  /* border-bottom: 1px solid #000000; */
   margin-bottom: 1.5rem;
 }
 

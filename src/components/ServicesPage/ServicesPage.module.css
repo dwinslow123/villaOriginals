@@ -38,3 +38,7 @@
   height: 7.5rem;
   background: #FFFFFF;
 }
+
+.price {
+  display: none;
+}

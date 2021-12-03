@@ -4,8 +4,9 @@ import Layout from "./components/Layout/";
 import Home from './components/Home';
 import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import ContactForm from "./components/ContactForm/ContactForm";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
