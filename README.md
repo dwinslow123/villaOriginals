@@ -1,1 +1,1 @@
-A site for a local hair salon.
+A site for a local hair salon
