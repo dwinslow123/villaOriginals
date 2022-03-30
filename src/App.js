@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/";
 import Home from './components/Home';
 import ServicesPage from './components/ServicesPage';
@@ -11,17 +11,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   return (
     <BrowserRouter>
+    <>
       <Layout>
-        <Switch>
-          <Route exact path="/" component={ Home } />
-          <Route path="/services" component={ ServicesPage } />
-          <Route exact path="/contact" component={ ContactPage } />
-          <Route path="/contactForm" component={ ContactForm } />
-          <Route exact path="/Contact_Us.html">
-            <Redirect to="/contact" component={ ContactPage } />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={ <Home /> } />
+          <Route path="/services" element={ <ServicesPage /> } />
+          <Route exact path="/contact" element={ <ContactPage /> } />
+          <Route path="/contactForm" element={ <ContactForm /> } />
+          <Route exact path="/Contact_Us.html" element={ <ContactPage /> } />
+          <Route exact path="/contact" element={ <ContactPage /> } />
+        </Routes>
       </Layout>
+      </>
     </BrowserRouter>
   );
 };

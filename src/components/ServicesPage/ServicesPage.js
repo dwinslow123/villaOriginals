@@ -6,6 +6,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 const ServicesPage = () => {
   return (
+    <>
     <div className={styles.servicesPage}>
       <div className={styles.servicesBox}>
         <ul className={styles.servicesList}>
@@ -79,6 +80,7 @@ const ServicesPage = () => {
         </ul>
       </div>
     </div>
+    </>
   );
 };
 

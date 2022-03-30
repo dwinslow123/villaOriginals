@@ -7,11 +7,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
+  /**
+   * mapSelector checks the current browser before deciding to open in Apple Maps or Google Maps.
+   */
   const mapSelector = () => {
     if (
-      navigator.platform.indexOf("iPhone") !== -1 ||
-      navigator.platform.indexOf("iPad") !== -1 ||
-      navigator.platform.indexOf("iPod") !== -1
+      navigator.userAgent.platform.indexOf("iPhone") !== -1 ||
+      navigator.userAgent.platform.indexOf("iPad") !== -1 ||
+      navigator.userAgent.platform.indexOf("iPod") !== -1
     ) {
       window.open(
         "maps://www.google.com/maps/place/26+S+Villa+Ave,+Villa+Park,+IL+60181/@41.8891481,-87.9720645,17z/data=!3m1!4b1!4m5!3m4!1s0x880e4cd90ba946fd:0xaca2ef0eb8bb9c27!8m2!3d41.8891441!4d-87.9698705"
