@@ -46,13 +46,7 @@
 }
 
 .contactBox {
-  grid-area: contactBox;
-  width: 100%;
-  display: flex;
-  grid-template-columns: repeat(auto-fill, 270px);
-  justify-content: center;
-  column-gap: 1rem;
-  row-gap: .5rem;
+
 }
 
 .contactCard {

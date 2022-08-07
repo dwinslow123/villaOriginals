@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/";
-import Home from './components/Home';
-import ServicesPage from './components/ServicesPage';
-import ContactPage from './components/ContactPage';
+import Home from './pages/Home';
+import ServicesPage from './pages/ServicesPage';
+import ContactPage from './pages/ContactPage';
 import ContactForm from "./components/ContactForm/ContactForm";
 
 import 'bootstrap/dist/css/bootstrap.min.css';

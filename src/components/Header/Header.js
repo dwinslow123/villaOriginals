@@ -1,24 +1,26 @@
 import React from "react";
-import styles from "./Header.module.css";
+import {Nav, Navbar, NavbarBrand, NavItem, NavLink} from "reactstrap";
+import styles from './Header.module.css';
 
-import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
-
+/** Header Component */
 const Header = () => {
-  return (
-    <Navbar color="light" light expand="md" className={styles.header}>
-      <Nav className={styles.navBar} navbar>
-        <NavItem>
-          <NavLink href="/">Home</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/services">Services</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/contact">Contact</NavLink>
-        </NavItem>
-      </Nav>
-    </Navbar>
-  );
+    return (
+        <>
+            <Navbar className={ styles.header }>
+                <NavbarBrand href='/'>
+                    Villa Originals
+                </NavbarBrand>
+                <Nav className={styles.navBar} navbar>
+                    <NavItem>
+                        <NavLink className={styles.actionLink} href="/services">Services</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className={styles.actionLink} href="/contact">Contact</NavLink>
+                    </NavItem>
+                </Nav>
+            </Navbar>
+        </>
+    );
 };
 
 export default Header;
