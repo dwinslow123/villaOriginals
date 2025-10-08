@@ -14,9 +14,9 @@ const Header = () => {
                     <NavItem>
                         <NavLink className={styles.actionLink} href="/services">Services</NavLink>
                     </NavItem>
-                    <NavItem>
+                    {/* <NavItem>
                         <NavLink className={styles.actionLink} href="/contact">Contact</NavLink>
-                    </NavItem>
+                    </NavItem> */}
                 </Nav>
             </Navbar>
         </>
