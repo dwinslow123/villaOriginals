@@ -6,7 +6,7 @@ import styles from './Header.module.css';
 const Header = () => {
     return (
         <>
-            <Navbar className={ styles.header }>
+            <Navbar className={styles.header}>
                 <NavbarBrand href='/'>
                     Villa Originals
                 </NavbarBrand>
