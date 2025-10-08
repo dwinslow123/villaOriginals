@@ -12,31 +12,14 @@ library.add(faFacebook, faInstagram, faMapLocationDot, faPhone);
 
 /** Footer component */
 const Footer = () => {
-
-    /**
-    * mapSelector checks the current browser before deciding to open in Apple Maps or Google Maps.
-    */
-    const mapSelector = () => {
-        if (
-            navigator?.userAgent?.includes('Mac')
-        ) {
-            window.open(
-                "maps://www.apple.com/maps/place/26+S+Villa+Ave,+Villa+Park,+IL+60181/@41.8891481,-87.9720645,17z/data=!3m1!4b1!4m5!3m4!1s0x880e4cd90ba946fd:0xaca2ef0eb8bb9c27!8m2!3d41.8891441!4d-87.9698705"
-            );
-        } else {
-            window.open(
-                "https://maps.app.goo.gl/S6B26KYU7R9D5UJJ6"
-            );
-
-        }
-    };
+    const isApple = navigator?.userAgent?.includes('Mac') || navigator?.userAgent?.includes('iPhone') || navigator?.userAgent?.includes('iPad');
 
     return (
         <div className={styles.footer}>
             <div className={styles.contactInfo}>
                 <address className={styles.address}>
                     <FontAwesomeIcon className={styles.icon} icon={['fas', 'map-location-dot']} />
-                    <a href="#" className={styles.addressText} onClick={mapSelector}>
+                    <a href={isApple ? constants.APPLE_MAPS_ADDRESS : constants.GOOGLE_MAPS_ADDRESS} className={styles.addressText}>
                         {constants.SHOP_ADDRESS}
                         <br/>
                         {constants.SHOP_CITY_AND_ZIP}
