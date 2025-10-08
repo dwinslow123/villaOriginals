@@ -2,12 +2,13 @@ import React from 'react';
 import {dom, library} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faFacebook, faInstagram} from '@fortawesome/free-brands-svg-icons';
+import {faMapLocationDot, faPhone} from '@fortawesome/free-solid-svg-icons';
 import styles from './Footer.module.css';
 
 import constants from '../../utils/constants';
 
 dom.watch();
-library.add(faFacebook, faInstagram);
+library.add(faFacebook, faInstagram, faMapLocationDot, faPhone);
 
 /** Footer component */
 const Footer = () => {
@@ -32,17 +33,21 @@ const Footer = () => {
 
     return (
         <div className={styles.footer}>
-            <div>
+            <div className={styles.contactInfo}>
                 <address className={styles.address}>
-                    <a href="#" onClick={mapSelector}>
+                    <FontAwesomeIcon className={styles.icon} icon={['fas', 'map-location-dot']} />
+                    <a href="#" className={styles.addressText} onClick={mapSelector}>
                         {constants.SHOP_ADDRESS}
                         <br/>
                         {constants.SHOP_CITY_AND_ZIP}
                     </a>
                     <br/>
-                    <a href={constants.PHONE_HREF}>{constants.SHOP_PHONE_NUMBER}</a>
                 </address>
-            </div>
+                <div className={styles.phone}>
+                    <FontAwesomeIcon className={styles.icon} icon={['fas', 'phone']} />
+                    <a href={constants.PHONE_HREF}>{constants.SHOP_PHONE_NUMBER}</a>
+                </div>
+                </div>
             <div className={styles.footerIcons}>
                 <a href="https://www.facebook.com/Villa-Originals-324083014196/">
                     <FontAwesomeIcon

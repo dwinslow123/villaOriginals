@@ -3,11 +3,79 @@
   border-top: 2px solid #000000;
   background: #FFFFFF;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 10rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 1rem 0;
+    height:fit-content;
+  }
+  .contactInfo {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .footerIcons {
+    margin-top: 0.5rem;
+  }
 }
 
 .footerIcons a {
   margin: 0 .75rem;
+}
+
+.contactInfo {
+  display: flex;
+
+}
+
+.address {
+  font-size: 0.875rem;
+  color: #000000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.addressText {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+}
+.addressText:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone a {
+  text-decoration: none;
+  color: inherit;
+}
+.phone a:hover {
+  text-decoration: underline;
 }

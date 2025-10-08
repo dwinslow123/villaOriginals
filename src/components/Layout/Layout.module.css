@@ -2,7 +2,7 @@
   display: grid;
   flex: 1;
   grid-template-columns: auto;
-  grid-template-rows:  50px 50px auto 50px;
+  grid-template-rows:  50px 50px auto 6rem;
   grid-template-areas: 
     "modal"
     "header"
@@ -13,7 +13,6 @@
 .content {
   grid-area: content;
   display: flex;
-  height: 100%;
 }
 
 .covidButton {
