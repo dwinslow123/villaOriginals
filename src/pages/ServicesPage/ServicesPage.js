@@ -29,10 +29,10 @@ const ServicesPage = () => {
             <h5>Color*</h5><p className={styles.price}>$55</p>
           </li>
           <li>
-            <h5>Kid's Cut</h5><p className={styles.price}>$14</p>
+            <h5>Kid&#39;s Cut</h5><p className={styles.price}>$14</p>
           </li>
           <li>
-            <h5>Kid's Cut with Blow-Dry and Curl</h5><p className={styles.price}>$20</p>
+            <h5>Kid&#39;s Cut with Blow-Dry and Curl</h5><p className={styles.price}>$20</p>
           </li>
           <li>
             <h5>Roller Set</h5><p className={styles.price}>$20</p>
@@ -65,7 +65,7 @@ const ServicesPage = () => {
             <h5>Perm with Curl</h5><p className={styles.price}>$83 and up</p>
           </li>
           <li>
-            <h5>Updo's and Formals</h5><p className={styles.price}>$45 and up</p>
+            <h5>Updo&#39;s and Formals</h5><p className={styles.price}>$45 and up</p>
           </li>
           <li>
             <h5>Wax Brows</h5><p className={styles.price}>$12</p>
