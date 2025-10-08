@@ -2,7 +2,7 @@
   "name": "villa_originals",
   "version": "0.1.0",
   "engines": {
-    "node": "18.x",
+    "node": "22.x",
     "yarn": "1.22.x"
   },
   "private": true,
