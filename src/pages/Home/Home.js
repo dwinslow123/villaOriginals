@@ -1,9 +1,7 @@
 import React from "react";
-import ReactGA from "react-ga";
 import styles from "./Home.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
     return (
